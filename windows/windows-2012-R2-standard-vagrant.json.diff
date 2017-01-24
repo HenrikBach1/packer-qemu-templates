@@ -1,0 +1,11 @@
+--- windows-2012-R2-standard-vagrant-orig.json	2017-01-24 21:08:55.542043042 +0100
++++ windows-2012-R2-standard-vagrant.json	2017-01-24 21:06:42.032925367 +0100
+@@ -34,6 +34,8 @@
+             "winrm_password": "vagrant",
+             "winrm_timeout": "10000s",
+ 
++            "qemu_binary": "/usr/libexec/qemu-kvm",
++
+             "qemuargs": [
+                 [ "-m", "4048M" ],
+                 [ "-cpu", "Westmere" ]
